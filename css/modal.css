@@ -3,6 +3,7 @@
 	background:#fff;
 	left:50%;
 	margin:-250px 0 0 -40%;
+	opacity:0;
 	position:absolute;
 	top:-50%;
 	width:80%;
@@ -19,6 +20,7 @@
 }
 	/* Make the modal appear when targeted */
 	#modal:target {
+		opacity:1;
 		top:50%;
 	}
 #modal header,#modal footer {
