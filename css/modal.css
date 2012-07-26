@@ -3,7 +3,6 @@
 	background:#fff;
 	left:50%;
 	margin:-250px 0 0 -40%;
-	opacity:0;
 	position:absolute;
 	top:-50%;
 	width:80%;
@@ -14,14 +13,13 @@
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
-	transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-webkit-transition: all 0.4s ease-in-out;
 }
 	/* Make the modal appear when targeted */
 	#modal:target {
-		opacity:1;
 		top:50%;
+		transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-webkit-transition: all 0.4s ease-in-out;
 	}
 #modal header,#modal footer {
 	background:#f7f7f7;
