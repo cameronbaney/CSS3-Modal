@@ -5,28 +5,31 @@
 	<title>HTML5/CSS3 Modal</title>
 	<!-- Demo Styles -->
 	<link href="css/demo.css" rel="stylesheet">
-	
+
 	<!-- Modal Styles -->
 	<link href="css/modal.css" rel="stylesheet">
 </head>
 
 <body>
-	<section class="container">
+	<div class="container">
 		<h2>CSS3 Modal</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		<p><a href="#modal" class="btn go">Activate Modal</a></p>
-	</section>	
-	
+	</div>
+
 	<aside id="modal">
-		<header>
-			<h2>Modal Heading</h2>
-		</header>
-		<section>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</section>
-		<footer class="cf">
-			<a href="#" class="btn">Close</a>
-		</footer>
+		<div class="modal-content">
+			<div class="header">
+				<h2>Modal Heading</h2>
+			</div>
+			<div class="copy">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="cf footer">
+				<a href="#" class="btn">Close</a>
+			</div>
+		</div>
+		<div class="overlay"></div>
 	</aside>
 </body>
 </html>

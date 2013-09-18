@@ -1,47 +1,59 @@
 /* Normal styles for the modal */
 #modal {
-	background:#fff;
 	left:50%;
 	margin:-250px 0 0 -40%;
+	opacity: 0;
 	position:absolute;
 	top:-50%;
+	visibility: hidden;
 	width:80%;
-	border-radius:5px;
 	box-shadow:0 3px 7px rgba(0,0,0,.25);
-	-moz-box-shadow:0 3px 7px rgba(0,0,0,.25);
-	-webkit-box-shadow:0 3px 7px rgba(0,0,0,.25);
 	box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
+	transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
 }
 	/* Make the modal appear when targeted */
 	#modal:target {
+		opacity: 1;
 		top:50%;
-		transition: all 0.4s ease-in-out;
-		-moz-transition: all 0.4s ease-in-out;
-		-webkit-transition: all 0.4s ease-in-out;
+		visibility: visible;
 	}
-#modal header,#modal footer {
-	background:#f7f7f7;
+#modal .header,#modal .footer {
 	border-bottom: 1px solid #e7e7e7;
 	border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
-	-webkit-border-radius: 5px 5px 0 0;
 }
-	#modal footer {
+	#modal .footer {
 		border:none;
 		border-top: 1px solid #e7e7e7;
 		border-radius: 0 0 5px 5px;
-		-moz-border-radius: 0 0 5px 5px;
-		-webkit-border-radius: 0 0 5px 5px;
 	}
-#modal section,#modal header, #modal footer {
-	padding:15px;
-	z-index:200;
-}
 #modal h2 {
 	margin:0;
 }
 #modal .btn {
 	float:right;
+}
+#modal .copy,#modal .header, #modal .footer {
+	padding:15px;
+}
+.modal-content {
+	background: #f7f7f7;
+	position: relative;
+	z-index: 20;
+	border-radius:5px;
+}
+#modal .copy {
+	background: #fff;
+}
+
+#modal .overlay {
+	background-color: #000;
+	background: rgba(0,0,0,.5);
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
 }
